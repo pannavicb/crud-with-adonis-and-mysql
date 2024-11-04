@@ -14,8 +14,8 @@
 */
 
 const Route = use('Route')
-
-
 Route.on('/').render('welcome')
 Route.on('/hello').render('hello')
+Route.get('/users', 'UserController.index')
+
 
